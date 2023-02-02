@@ -1,6 +1,6 @@
 @font-face {
     font-family: birthday;
-    src: url('/font/Code.ttf');
+    src: url('./font/Code.ttf');
 }
 
 body {
