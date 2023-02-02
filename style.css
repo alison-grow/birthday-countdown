@@ -1,35 +1,43 @@
 @font-face {
     font-family: birthday;
-    src: url('/font/Dutch\ &\ Harley.ttf');
+    src: url('/font/Code.ttf');
 }
 
 body {
-    background-image: url('https://dl.glitter-graphics.com/pub/1525/1525725hphzd4q86e.jpg');
-    background-attachment: fixed;
-    background-repeat: repeat;
+    background-color: #181818;
 }
 
 .header {
     height: 125px;
     width: 50%;
-    margin: 30px auto 30px auto;
-    background-color: #8E0704;
-    border: 15px solid black;
+    margin: 40px auto 40px auto;
+    /* background-color: #; */
+    border: 8px solid #F4388B;
     border-radius: 15px;
 }
 
 .header-content {
     text-align: center;
-    margin-top: 25px;
-    color: black;
-    font-size: 60px;
+    margin-top: 30px;
+    color: #E5A8E9;
+    font-size: 50px;
     font-family: 'birthday', cursive;
+    letter-spacing: -5px;
 }
 
 #countdown-container {
-    height: 300px;
-    width: 75%;
-    border: 5px solid black;
+    height: 350px;
+    width: 50%;
+    border: 8px solid #F4388B;
     margin: 20px auto 50px auto;
-    background-color: #8E0704;
+    border-radius: 15px;
+}
+
+.countdown-content {
+    color: #E5A8E9;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'birthday', cursive;
+    letter-spacing: -5px;
+    margin-top: 20px;
 }

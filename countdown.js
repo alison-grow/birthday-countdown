@@ -1,4 +1,4 @@
-var countDownDate = new Date("Apr 30, 2023 00:00:01").getTime();
+var countDownDate = new Date("Apr 30, 2023 00:00:00").getTime();
 
 var myFunction = setInterval(function() {
     
@@ -10,10 +10,11 @@ var myFunction = setInterval(function() {
     var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    document.getElementById("days").innerHTML = days + "d ";
-    document.getElementById("hours").innerHTML = hours + "h ";
-    document.getElementById("mins").innerHTML = minutes + "m ";
-    document.getElementById("secs").innerHTML = seconds + "s";
+    document.getElementById("days").innerHTML = days + " days "
+    document.getElementById("hours").innerHTML = hours + " hours "
+    document.getElementById("mins").innerHTML = minutes + " minutes "
+    document.getElementById("secs").innerHTML = seconds + " seconds "
+    document.getElementById("birthday").innerHTML = "until april 30th!"
 
     if (timeLeft < 0) {
         clearInterval(myFunction);
@@ -21,6 +22,7 @@ var myFunction = setInterval(function() {
         document.getElementById("hours").innerHTML = "" 
         document.getElementById("mins").innerHTML = ""
         document.getElementById("secs").innerHTML = ""
-        document.getElementById("end").innerHTML = "TIME UP!!";
+        document.getElementById("birthday").innerHTML = ""
+        document.getElementById("end").innerHTML = "HAPPY BIRTHDAY!!";
     };
 }, 1000)
